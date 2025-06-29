@@ -1,0 +1,23 @@
+# Node modules
+backend/node_modules/
+frontend/node_modules/
+
+# Environment files
+backend/.env
+frontend/.env
+
+# Prisma
+backend/prisma/dev.db
+backend/prisma/dev.db-journal
+
+# Build files
+frontend/dist/
+frontend/.next/
+backend/dist/
+
+# Logs
+*.log
+
+# System
+.DS_Store
+Thumbs.db
