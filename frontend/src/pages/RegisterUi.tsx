@@ -38,7 +38,7 @@ const RegisterUi = () => {
         <input type="text" id="" placeholder="password"{...register('password')} />
         {errors.password && <p>{errors.password.message}</p>}
         <input type="submit" value="submit" />
-        <p>{message}</p>
+        {message &&  <p>{message}</p>}
       </form>
 
     </div>

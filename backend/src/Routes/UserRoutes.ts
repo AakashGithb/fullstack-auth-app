@@ -1,6 +1,7 @@
 import {Router} from  'express'
-import registerController from '../Controlers/registerController.js'
+
 import loginController from '../Controlers/loginController.js'
+import registerController from '../Controlers/registerController.js'
 
 
 export const UserRoutes= Router()

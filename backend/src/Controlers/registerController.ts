@@ -15,15 +15,16 @@ const registerController = async (req: Request, res: Response) => {
       })
 
       if(existinguser){
-            res.status(400).json({message:"email already exists"})
+           res.status(400).json({message:"email already exists"})
+         
       }
 
       const register = await prisma.user.create({ data: { email, password }, })
       const { password: _, ...dataWithoutPass } = register
       res.status(201).json({ message: "User Registered Successfully", userdata: dataWithoutPass })
-
+       
    } catch (error) {
-      res.status(500).json({ error: "error" })
+       res.status(500).json({ error: "error" })
    }
 }
 
