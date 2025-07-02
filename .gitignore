@@ -18,6 +18,6 @@ backend/dist/
 # Logs
 *.log
 
-# System
+# Systemm
 .DS_Store
 Thumbs.db
